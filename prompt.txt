@@ -1,0 +1,57 @@
+ Prompt: Build MoveLekker Phase 2 (No Backend)
+Build a two-page HTML and JavaScript web app called MoveLekker. The app helps users find and contact moving agents across South Africa. This is Phase 2, so no backend is used, and the contact sharing is handled via EmailJS. Here's the user journey and requirements:
+
+📍 Page 1 – index.html
+Show a list of 10 hardcoded moving agents.
+
+Each agent must have:
+
+name
+
+city
+
+truck type (Bakkie, Medium Truck, or Large Truck)
+
+profile picture (use placeholder)
+
+Display agents in a responsive grid using plain HTML/CSS.
+
+Each card must have a “View Details” button that links to agent.html?id=AGENT_ID.
+
+📍 Page 2 – agent.html
+Read agent ID from URL parameter and load agent info.
+
+Show:
+
+name
+
+province
+
+city
+
+area/town
+
+truck type
+
+Do NOT show the phone number yet.
+
+Below the info, display a form asking user to enter:
+
+Their email
+
+Their phone number
+
+A “Reveal Contact Info” button
+
+When the user submits:
+
+Show the agent’s phone number immediately on the screen.
+
+Send an email to the user (using EmailJS) with:
+
+Agent’s name and phone number
+
+User’s submitted email and phone
+
+Use emailjs.init("YOUR_USER_ID") and call emailjs.send(...)
+

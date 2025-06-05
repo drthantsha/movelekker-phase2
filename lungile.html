@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Details - Lungile Nehanda</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("YhuY4zdJzrpsYbDUc");
+    })();
+  </script>
+  <style>
+    :root {
+      --bs-success: #198754;
+      --bs-success-dark: #0f5132;
+    }
+    body { 
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f8f9fa;
+    }
+    .navbar {
+      background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1rem;
+    }
+    .back-link {
+      color: #333;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.2s;
+    }
+    .back-link:hover {
+      color: var(--bs-success);
+    }
+    .agent-card {
+      background: white;
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .agent-header {
+      text-align: center;
+      padding: 2rem 0;
+    }
+    .agent-header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin-bottom: 1.5rem;
+      object-fit: cover;
+      border: 3px solid var(--bs-success);
+    }
+    .agent-header h2 {
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+    .location-badge {
+      color: #666;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .tag {
+      background: #000;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-size: 0.9rem;
+      margin: 0.25rem;
+      display: inline-block;
+    }
+    .form-control {
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      border: 1px solid #dee2e6;
+      margin-bottom: 1rem;
+    }
+    .form-control:focus {
+      border-color: var(--bs-success);
+      box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+    }
+    .btn-success {
+      background: var(--bs-success);
+      border: none;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      width: 100%;
+      transition: background-color 0.2s;
+    }
+    .btn-success:hover {
+      background: var(--bs-success-dark);
+    }
+    footer {
+      background: var(--bs-success);
+      color: white;
+      padding: 3rem 0;
+      margin-top: 4rem;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #e9ecef;
+      text-decoration: underline;
+    }
+    .social-icons {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .social-icons a {
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a href="index.html" class="back-link">
+        <i class="bi bi-arrow-left"></i> Back to Agents
+      </a>
+    </div>
+  </nav>
+
+  <div class="container py-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="agent-card card p-4">
+          <div class="agent-header">
+            <img src="img/agents/lungile.jpg" alt="Lungile Nehanda" class="shadow">
+            <h2 class="h1">Lungile Nehanda</h2>
+            <div class="location-badge">
+              <i class="bi bi-geo-alt-fill text-success"></i> Pretoria, Gauteng
+            </div>
+            <div class="tags mb-4">
+              <span class="tag">🚛 Large Truck</span>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3 class="h4 mb-4 text-center">Enter your details to Request a Truck:</h3>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="userEmail" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control" id="userPhone" placeholder="Your Phone Number">
+            </div>
+            <button class="btn btn-success" onclick="revealContact()">
+              <i class="bi bi-truck me-2"></i>Contact Mover
+            </button>
+          </div>
+
+          <div id="contactInfo" class="alert alert-success mt-4 text-center" style="display:none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center">
+    <div class="container">
+      <div class="social-icons">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+      <p class="mb-1">© 2025 MoveLekker. All rights reserved.</p>
+      <p class="mb-0">Powered by <a href="https://polymathsoftware.site" target="_blank">polymathsoftware.site</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function revealContact() {
+      const email = document.getElementById('userEmail').value;
+      const phone = document.getElementById('userPhone').value;
+      
+      // Email validation
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address");
+        return;
+      }
+
+      // Phone validation
+      const phonePattern = /^0[0-9]{9}$/;
+      if (!phonePattern.test(phone.replace(/\s/g, ''))) {
+        alert("Please enter a valid South African phone number");
+        return;
+      }
+
+      document.getElementById("contactInfo").style.display = "block";
+      document.getElementById("contactInfo").innerHTML = `
+        <div class="d-flex align-items-center justify-content-center">
+          <i class="bi bi-person-circle fs-4 me-2"></i>
+          <strong>Contact:</strong> Lungile Nehanda - 076 031 2844
+        </div>
+      `;
+
+      emailjs.send(
+        "service_knm6nac", 
+        "template_yfxsn0e", 
+        {
+          to_email: email,
+          user_phone: phone,
+          agent_name: "Lungile Nehanda",
+          agent_phone: "076 031 2844"
+        }
+      ).then(() => {
+        alert("The agent's contact info has been emailed to you!");
+      }).catch((err) => {
+        console.error("Email error", err);
+      });
+    }
+  </script>
+</body>
+</html>

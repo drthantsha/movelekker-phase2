@@ -1,0 +1,153 @@
+Name : Knows Jonas
+
+Province: Gauteng
+
+City: Pretoria
+
+Area : Pretoria CBD
+
+Truck type: Large
+
+Phone: 076 489 4299
+#########################################
+
+
+
+Name : E & M Logistics
+
+Province: Limpopo
+
+City: Polokwane
+
+Area : Polokwane CBD
+
+Truck type: Large
+
+Phone: 062 301 7976
+###########################################
+
+
+
+Name : Edson Macha
+
+Province: Gauteng
+
+City: Pretoria
+
+Area : Pretoria CBD
+
+Truck type: Large
+
+Phone: 078 465 6341
+############################################
+
+
+Name : Lufuno Mabago
+
+Province: Limpopo
+
+City: Polokwane
+
+Area : Polokwane CBD
+
+Truck type: Large
+
+Phone: 071 597 0061
+#########################################
+
+
+Name : Lungile Nehanda
+
+Province: Gauteng
+
+City: Pretoria
+
+Area : Pretoria North
+
+Truck type: Large
+
+Phone: 076 031 2844
+#########################################
+
+
+Name : MMM Muvhango Logistics
+
+Province: Limpopo
+
+City: Polokwane
+
+Area : Polokwane CBD
+
+Truck type: Large
+
+Phone: 082 972 6111
+#########################################
+
+
+Name : RJ
+
+Province: Gauteng
+
+City: Johannesburg
+
+Area : Soweto
+
+Truck type: Bakkie
+
+Phone: 082 699 7867
+#########################################
+
+
+Name : Tshepo Baloyi
+
+Province: Gauteng
+
+City: Pretoria
+
+Area : Pretoria North
+
+Truck type: Medium
+
+Phone: 072 170 9002
+#########################################
+
+
+Name : Vaye Mphahlele
+
+Province: Limpopo
+
+City: Polokwane
+
+Area : Polokwane CBD
+
+Truck type: Medium
+
+Phone: 083 522 6042
+#########################################
+
+
+Name : Walter
+
+Province: Gauteng
+
+City: Pretoria
+
+Area : Pretoria West
+
+Truck type: Bakkie
+
+Phone: 072 192 6336
+#########################################
+
+Name : Zett Movers
+
+Province: Limpopo
+
+City: Polokwane
+
+Area : Polokwane CBD
+
+Truck type: Medium
+
+Phone: 083 944 7330
+#########################################

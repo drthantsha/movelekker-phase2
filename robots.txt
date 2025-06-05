@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://movelekker.netlify.app/sitemap.xml
+
+# Allow all bots to access everything
+Disallow:
